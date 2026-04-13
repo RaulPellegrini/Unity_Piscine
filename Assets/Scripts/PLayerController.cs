@@ -23,9 +23,9 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.Space)) direction += Vector3.up;
 
         direction = direction.normalized;
-        rb.MovePosition(rb.position + direction *speed * Time.fixedDeltaTime);
-        
-        }
+        //rb.MovePosition(rb.position + direction *speed * Time.fixedDeltaTime);
+        rb.linearVelocity = direction * speed;
+    }
 
     void OnCollisionEnter(Collision collision)
     {
