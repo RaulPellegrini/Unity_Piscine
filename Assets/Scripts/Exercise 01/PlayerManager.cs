@@ -7,6 +7,7 @@ public class PlayerManager : MonoBehaviour
 
 
     private PlayerController01 active_controller;
+    private KeyCode[] keys = { KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4};
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,34 +19,40 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
-        if(Input.GetKeyDown(KeyCode.Alpha1) && players[0])
-        {
-            Debug.Log("switching player to 1");
-            if(SwitchPlayers(players[0]) != 1)
-                Debug.Log("Unable to change player1");     
-        }
 
-        if(Input.GetKeyDown(KeyCode.Alpha2) && players[1])
+        for(int i = 0 ; i < keys.Length ; i++ )
         {
-            Debug.Log("switching player to 1");
-            if(SwitchPlayers(players[1]) != 1)
-                Debug.Log("Unable to change player1");     
+            if(Input.GetKeyDown(keys[i]))
+                SwitchPlayers(players[i]);
         }
+        
+        // if(Input.GetKeyDown(KeyCode.Alpha1) && players[0])
+        // {
+        //     Debug.Log("switching player to 1");
+        //     if(SwitchPlayers(players[0]) != 1)
+        //         Debug.Log("Unable to change player1");     
+        // }
 
-        if(Input.GetKeyDown(KeyCode.Alpha2) && players[2])
-        {
-            Debug.Log("switching player to 1");
-            if(SwitchPlayers(players[2]) != 1)
-                Debug.Log("Unable to change player1");     
-        }
+        // if(Input.GetKeyDown(KeyCode.Alpha2) && players[1])
+        // {
+        //     Debug.Log("switching player to 1");
+        //     if(SwitchPlayers(players[1]) != 1)
+        //         Debug.Log("Unable to change player1");     
+        // }
 
-        if(Input.GetKeyDown(KeyCode.Alpha2) && players[3])
-        {
-            Debug.Log("switching player to 1");
-            if(SwitchPlayers(players[3]) != 1)
-                Debug.Log("Unable to change player1");     
-        }
+        // if(Input.GetKeyDown(KeyCode.Alpha3) && players[2])
+        // {
+        //     Debug.Log("switching player to 1");
+        //     if(SwitchPlayers(players[2]) != 1)
+        //         Debug.Log("Unable to change player1");     
+        // }
+
+        // if(Input.GetKeyDown(KeyCode.Alpha4) && players[3])
+        // {
+        //     Debug.Log("switching player to 1");
+        //     if(SwitchPlayers(players[3]) != 1)
+        //         Debug.Log("Unable to change player1");     
+        // }
 
 
 
