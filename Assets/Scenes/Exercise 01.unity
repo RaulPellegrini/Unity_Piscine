@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 245667942}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -396,6 +396,7 @@ MonoBehaviour:
   players:
   - {fileID: 992563801}
   - {fileID: 2096545248}
+  - {fileID: 1420626320}
 --- !u!4 &1281697674
 Transform:
   m_ObjectHideFlags: 0
@@ -414,6 +415,11 @@ Transform:
   - {fileID: 2285988393658010659}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1420626320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4928790357970307295, guid: f10de2d508e6b234f897248988608b86, type: 3}
+  m_PrefabInstance: {fileID: 2285988393658010658}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1738427102
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,6 +685,10 @@ PrefabInstance:
       value: John
       objectReference: {fileID: 0}
     - target: {fileID: 6500452955431669414, guid: f10de2d508e6b234f897248988608b86, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500452955431669414, guid: f10de2d508e6b234f897248988608b86, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -739,6 +749,10 @@ PrefabInstance:
     - target: {fileID: 507938400501742017, guid: 9d76c47c572287441ae2ae623661341a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828510482483266867, guid: 9d76c47c572287441ae2ae623661341a, type: 3}
+      propertyPath: speed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7828510482483266867, guid: 9d76c47c572287441ae2ae623661341a, type: 3}
       propertyPath: m_Enabled

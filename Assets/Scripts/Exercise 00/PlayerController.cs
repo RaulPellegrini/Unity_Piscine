@@ -27,9 +27,5 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = direction * speed;
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        
-    }
 }
 
