@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] players;
+    [SerializeField] private CameraManager cameraManager;
 
 
     private PlayerController01 active_controller;
@@ -25,35 +26,6 @@ public class PlayerManager : MonoBehaviour
             if(Input.GetKeyDown(keys[i]))
                 SwitchPlayers(players[i]);
         }
-        
-        // if(Input.GetKeyDown(KeyCode.Alpha1) && players[0])
-        // {
-        //     Debug.Log("switching player to 1");
-        //     if(SwitchPlayers(players[0]) != 1)
-        //         Debug.Log("Unable to change player1");     
-        // }
-
-        // if(Input.GetKeyDown(KeyCode.Alpha2) && players[1])
-        // {
-        //     Debug.Log("switching player to 1");
-        //     if(SwitchPlayers(players[1]) != 1)
-        //         Debug.Log("Unable to change player1");     
-        // }
-
-        // if(Input.GetKeyDown(KeyCode.Alpha3) && players[2])
-        // {
-        //     Debug.Log("switching player to 1");
-        //     if(SwitchPlayers(players[2]) != 1)
-        //         Debug.Log("Unable to change player1");     
-        // }
-
-        // if(Input.GetKeyDown(KeyCode.Alpha4) && players[3])
-        // {
-        //     Debug.Log("switching player to 1");
-        //     if(SwitchPlayers(players[3]) != 1)
-        //         Debug.Log("Unable to change player1");     
-        // }
-
 
 
     }
@@ -61,13 +33,17 @@ public class PlayerManager : MonoBehaviour
 
     int SwitchPlayers(GameObject player_to_activate)
     {   
+        if(player_to_activate == null) return 0;
+
         this.active_controller.enabled  = false;
         //active_controller.enabled = false;
         this.active_controller = player_to_activate.GetComponent<PlayerController01>();
-        if(!this.active_controller)
-            return(0);
+        
+        if(active_controller == null) return(0);
 
-        this.active_controller.enabled = true;
+        active_controller.enabled = true;
+        
+        cameraManager.FocusChange(player_to_activate);
 
         return(1);
     }
