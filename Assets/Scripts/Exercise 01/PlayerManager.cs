@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] players;
+    [SerializeField] private GameObject[] spawnPosition;
     [SerializeField] private CameraManager cameraManager;
 
 
@@ -27,7 +28,22 @@ public class PlayerManager : MonoBehaviour
                 SwitchPlayers(players[i]);
         }
 
+        if(Input.GetKeyDown(KeyCode.R)) ResetPlayers();
 
+    }
+
+    int ResetPlayers()
+    {
+        if(players.Length != spawnPosition.Length)
+        {
+            Debug.Log("unmacthing players and spawn positions");
+            return(0);
+        }
+
+        for (int i = 0; i < spawnPosition.Length ; i++)
+            players[i].transform.position = spawnPosition[i].transform.position;
+    
+        return(1);
     }
 
 
