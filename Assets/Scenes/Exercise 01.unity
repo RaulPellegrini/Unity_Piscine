@@ -523,6 +523,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d91d52ca9faefc544aa38146f3a2be87, type: 3}
+--- !u!1 &310480759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2229638552391060082, guid: d91d52ca9faefc544aa38146f3a2be87, type: 3}
+  m_PrefabInstance: {fileID: 46013916}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &402033234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,6 +1818,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EndLevel
   endPoints:
   - {fileID: 2024333751}
+  - {fileID: 310480759}
+  - {fileID: 2098806340}
 --- !u!1001 &1953950209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1935,6 +1942,11 @@ GameObject:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8283491890754618186, guid: 9d76c47c572287441ae2ae623661341a, type: 3}
   m_PrefabInstance: {fileID: 6604472087466753833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2098806340 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2229638552391060082, guid: d91d52ca9faefc544aa38146f3a2be87, type: 3}
+  m_PrefabInstance: {fileID: 1953950209}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2136722818711271502
 PrefabInstance:
