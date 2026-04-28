@@ -1841,6 +1841,7 @@ MonoBehaviour:
   - {fileID: 2024333751}
   - {fileID: 310480759}
   - {fileID: 2098806340}
+  nextScene: Exercise 01.1
 --- !u!1001 &1953950209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2021,6 +2022,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4095724219346021690, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 680dcf48ca350ef4c8dd83f578c85dca, type: 2}
     - target: {fileID: 6751769435840196151, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
       propertyPath: m_Name
       value: Thomas
@@ -2050,6 +2055,10 @@ PrefabInstance:
     - target: {fileID: 243517608015513382, guid: f10de2d508e6b234f897248988608b86, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550768992714083456, guid: f10de2d508e6b234f897248988608b86, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3575510673001378388, guid: f10de2d508e6b234f897248988608b86, type: 3}
       propertyPath: m_LocalPosition.x

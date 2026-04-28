@@ -7,6 +7,8 @@ public class SafeNet : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
+        if(players.Length != spawnPos.Length)
+        Debug.Log("ERROR Safe Net: Players and Spawn position do not match");
         if(other.gameObject.CompareTag("Player"))
         {
             if(other.gameObject == players[0])

@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndLevel : MonoBehaviour
 {
     [SerializeField] private GameObject[] endPoints;
+    [SerializeField] private string nextScene;
 
     public void Update()
     {
@@ -24,7 +26,7 @@ public class EndLevel : MonoBehaviour
 
         if(playersToArrive == endPoints.Length)
         {
-            Debug.Log("LevelCompleted");
+            SceneManager.LoadScene(nextScene);
         }
     }
 

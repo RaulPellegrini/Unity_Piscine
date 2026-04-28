@@ -68,8 +68,10 @@ public class PlayerController01 : MonoBehaviour
     void FixedUpdate()
     {
             direction = direction.normalized;
-            rb.transform.position = rb.transform.position + direction * speed * Time.deltaTime;    
-            
+            //rb.transform.position = rb.transform.position + direction * speed * Time.deltaTime;    
+            rb.MovePosition(rb.transform.position + direction * speed * Time.deltaTime);
+
+
             if(jump)
             {
                 rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
