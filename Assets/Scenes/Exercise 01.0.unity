@@ -2060,6 +2060,10 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2378852002122533842, guid: f10de2d508e6b234f897248988608b86, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 680dcf48ca350ef4c8dd83f578c85dca, type: 2}
     - target: {fileID: 3575510673001378388, guid: f10de2d508e6b234f897248988608b86, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2163,6 +2167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1698184718627848263, guid: 9d76c47c572287441ae2ae623661341a, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 680dcf48ca350ef4c8dd83f578c85dca, type: 2}
     - target: {fileID: 3887572617106001075, guid: 9d76c47c572287441ae2ae623661341a, type: 3}
       propertyPath: m_IsActive
       value: 0
