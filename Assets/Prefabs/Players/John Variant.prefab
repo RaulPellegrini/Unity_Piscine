@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3406908775953214845
+--- !u!1001 &1861550361952184040
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,15 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2903495970181715132, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2903495970181715132, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2903495970181715132, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2903495970181715132, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62,44 +54,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2903495970181715132, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3357534822158095549, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 714c440de39bcae459b899ac11754b7b, type: 2}
+      objectReference: {fileID: 2100000, guid: d188676bd58deca4ba32a01e79875804, type: 2}
     - target: {fileID: 3744426485744130114, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 714c440de39bcae459b899ac11754b7b, type: 2}
+      objectReference: {fileID: 2100000, guid: d188676bd58deca4ba32a01e79875804, type: 2}
     - target: {fileID: 4437805376255083717, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 714c440de39bcae459b899ac11754b7b, type: 2}
+      objectReference: {fileID: 2100000, guid: d188676bd58deca4ba32a01e79875804, type: 2}
     - target: {fileID: 4891949012544677966, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
       propertyPath: speed
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4891949012544677966, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: jumpForce
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5313502650877727497, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 714c440de39bcae459b899ac11754b7b, type: 2}
+      objectReference: {fileID: 2100000, guid: d188676bd58deca4ba32a01e79875804, type: 2}
     - target: {fileID: 6751769435840196151, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
       propertyPath: m_Name
-      value: Claire Variant
+      value: John Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6751769435840196151, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
+      propertyPath: m_TagString
+      value: Yellow
       objectReference: {fileID: 0}
     - target: {fileID: 7153853535688109478, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 714c440de39bcae459b899ac11754b7b, type: 2}
+      objectReference: {fileID: 2100000, guid: d188676bd58deca4ba32a01e79875804, type: 2}
     - target: {fileID: 8006130490756224104, guid: 36cb23d131a6a7d4b80af215bbf53586, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 714c440de39bcae459b899ac11754b7b, type: 2}
+      objectReference: {fileID: 2100000, guid: d188676bd58deca4ba32a01e79875804, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

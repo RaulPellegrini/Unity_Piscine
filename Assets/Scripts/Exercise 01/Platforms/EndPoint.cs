@@ -21,14 +21,14 @@ public class EndPoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject == character)
+        if(other.GetComponent<PlayerController01>())
             completed.SetActive(true);
 
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject == character)
+        if(other.GetComponent<PlayerController01>())
             completed.SetActive(false);
     }
 

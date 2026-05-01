@@ -5,22 +5,16 @@ public class PlayerController01 : MonoBehaviour
 {
     
     private Rigidbody rb;
-    private Collider passingthrow;
     
     [Header("Debug")]
     [SerializeField] private bool grounded = false;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckDistance = 0.08f;
-    [SerializeField] private bool wallJumping = false;
-    [SerializeField] private float checkWallDistance = 0.6f;
 
     [Header("Movement Settings")]
     [SerializeField] private int speed = 5;
     [SerializeField] private int jumpForce = 5;
 
-    [SerializeField] private int wallJumpForce = 5;
-    [Header("Passing Through Settings")]
-    [SerializeField] private float transparencyTime = 1f;
 
     private Vector3 direction = Vector3.zero;
     private bool jump = false;
@@ -29,7 +23,6 @@ public class PlayerController01 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        passingthrow = GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -43,25 +36,8 @@ public class PlayerController01 : MonoBehaviour
         
 
         if(grounded)
-        {
             if(Input.GetKeyDown(KeyCode.Space)) jump = true;
-            if(Input.GetKeyDown(KeyCode.S)) StartCoroutine(PassingThrough());
 
-        }
-
-        if(!grounded)
-        {
-            wallJumping = Physics.Raycast(transform.position,Vector3.left, checkWallDistance, groundLayer) || 
-                Physics.Raycast(transform.position,Vector3.right, checkWallDistance, groundLayer);
-
-
-            if(wallJumping)
-            {
-                
-                rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-                if(Input.GetKeyDown(KeyCode.Space)) jump = true;
-            }
-        }
 
     }
 
@@ -82,33 +58,17 @@ public class PlayerController01 : MonoBehaviour
 
     }
 
-    // private void OnCollisionExit(Collision other)
+    // IEnumerator PassingThrough() //this is a courotine
     // {
-    //     //if(other.gameObject.CompareTag("Floor") && grounded)
-    //     if(other.gameObject.CompareTag("Floor") ||other.gameObject.CompareTag("Player"))
+    //     if(passingthrow.enabled)
+    //     {
     //         grounded = false;
-
-    // }
-
-    // private void OnCollisionEnter(Collision other)
-    // {        
-    //     //if(other.gameObject.CompareTag("Floor") && !grounded)
-    //     if(other.gameObject.CompareTag("Floor") ||other.gameObject.CompareTag("Player"))
-    //         grounded = true;
-
-    // }
-
-    IEnumerator PassingThrough() //this is a courotine
-    {
-        if(passingthrow.enabled)
-        {
-            grounded = false;
-            passingthrow.enabled = false;
-            yield return new WaitForSeconds(transparencyTime);
-            passingthrow.enabled = true;
+    //         passingthrow.enabled = false;
+    //         yield return new WaitForSeconds(transparencyTime);
+    //         passingthrow.enabled = true;
             
-        }
+    //     }
 
-    }
+    // }
 
 }

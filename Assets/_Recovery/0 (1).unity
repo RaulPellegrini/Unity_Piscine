@@ -1009,7 +1009,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4891124858901931359, guid: 3324eaefc95a89e4aa0214656a36c884, type: 3}
       propertyPath: slideDistance
-      value: 5
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6698594414715179189, guid: 3324eaefc95a89e4aa0214656a36c884, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1051,10 +1051,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8161728135024516207, guid: 3324eaefc95a89e4aa0214656a36c884, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: d188676bd58deca4ba32a01e79875804, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1296,7 +1292,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f9cf89dc47324284aa9228e569bdd0b5, type: 2}
+  - {fileID: 2100000, guid: f96821bbefeea864b9b418af4b8615ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2072,7 +2068,7 @@ MonoBehaviour:
   - {fileID: 2024333751}
   - {fileID: 310480759}
   - {fileID: 2098806340}
-  nextScene: Exercise 01.2
+  nextScene: Exercise 01.0
 --- !u!1001 &1953950209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2183,7 +2179,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 21.76, y: 0.01, z: 0}
-  m_LocalScale: {x: 1, y: 4.45, z: 1}
+  m_LocalScale: {x: 1, y: 5.36, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 618308894}
@@ -2234,7 +2230,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d188676bd58deca4ba32a01e79875804, type: 2}
+  - {fileID: 2100000, guid: f96821bbefeea864b9b418af4b8615ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2476,7 +2472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4891124858901931359, guid: 3324eaefc95a89e4aa0214656a36c884, type: 3}
       propertyPath: slideDistance
-      value: 5
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6698594414715179189, guid: 3324eaefc95a89e4aa0214656a36c884, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2518,10 +2514,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8161728135024516207, guid: 3324eaefc95a89e4aa0214656a36c884, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: f9cf89dc47324284aa9228e569bdd0b5, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

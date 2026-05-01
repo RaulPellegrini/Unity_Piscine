@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4891949012544677966}
   m_Layer: 3
   m_Name: Thomas
-  m_TagString: Player
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,9 +158,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   groundCheckDistance: 0.9
-  wallJumping: 0
-  checkWallDistance: 0.6
   speed: 5
   jumpForce: 5
-  wallJumpForce: 5
-  transparencyTime: 1

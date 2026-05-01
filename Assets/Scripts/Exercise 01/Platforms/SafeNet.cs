@@ -9,7 +9,7 @@ public class SafeNet : MonoBehaviour
     {
         if(players.Length != spawnPos.Length)
         Debug.Log("ERROR Safe Net: Players and Spawn position do not match");
-        if(other.gameObject.CompareTag("Player"))
+        if(other.gameObject.GetComponent<PlayerController01>())
         {
             if(other.gameObject == players[0])
                 players[0].transform.position = spawnPos[0].transform.position;

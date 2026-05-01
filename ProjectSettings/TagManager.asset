@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Lava
   - Floor
+  - Red
+  - Blue
+  - Yellow
   layers:
   - Default
   - TransparentFX
